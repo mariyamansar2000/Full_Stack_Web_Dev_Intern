@@ -6,21 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Activity 2</title>
     <style>
-        *{
-            padding: 0px;
+        * {
             margin: 0px;
+            padding: 0px;
             box-sizing: border-box;
-            text-decoration: none;
         }
+        .card {
+            background-color: #f4f1de;
+            text-align: center;
+            margin-top: 20px;
+            height: 400px;
+            width: 350px;
+            position: relative;
+            left: 30%;
+            border-radius: 20px;
+        }
+
+        img {
+            width: 350px;
+            border-radius: 20px;
+            position: absolute;
+            left: 0;
+        }
+
+        .date {
+            position: absolute;
+            background-color: red;
+            border-radius: 100%;
+            color: white;
+            right: 10px;
+            top: 20px;
+            padding: 6px 3px;
+        }
+
+        h1 {
+            top: 53%;
+            position: absolute;
+            left: 40%;
+        }
+        p{
+            position: absolute;
+            top: 65%;
+        }
+        button{
+            position: absolute;
+            bottom: -7px;
+            left: 38%;
+            color: white;
+            background-color: red;
+            border-radius: 8px;
+            letter-spacing: 1.5px;
+            padding: 5px 5px 3px 10px;
+            border: none;
+        }       
     </style>
 </head>
 <body>
-    <div>
-        <span>
-            <img src="paris.jpg" alt="Paris"/>
-            <h1>Paris</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae nihil ipsam ea deserunt est sint nemo beatae laboriosam dicta, quia numquam mollitia fugit delectus at commodi esse doloribus assumenda autem!</p>
-        </span>
+    <div class="card">
+        <img src="paris.jpg" alt="Paris">
+        <h1>Paris</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatem neque unde quo eaque possimus
+            eligendi non perspiciatis mollitia debitis illum illo animi cum, nulla quibusdam deserunt molestias esse
+            eius!</p>
+        <button type="button">visit paris</button>
+        <div class="date">11 <sup>th</sup></div>
     </div>
 </body>
 </html>

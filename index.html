@@ -7,32 +7,29 @@
     <title>CSS</title>
     <style>
         * {
-            color: white;
+            
             padding: 0;
             margin: 0;
             box-sizing: border-box;
         }
-
-        h1.background{
-            background-color: #04fc18;
-        }
-
-        h2.background{
-            background-color: black;
-        }
-        h3.background{
-            background-color: crimson;
-        }
-        span.background{
-            background-color: orange;
-        }
         
+        div.parent div {
+            background-color: lime;
+        }
+
+        .parent h1 {
+            background-color: blue;
+        }
     </style>
 </head>
 <body>
-    <h1 class="background">Heading One</h1>
-    <h2 class="background">Heading Two</h2>
-    <h3 class="background">Heading Three</h3>
-    <span class="background">I am a span</span>
+    <div class="parent">
+        <div>I,m a div</div>
+        <h1>I'm a heading</h1>
+        <h1>I'm a heading</h1>
+        <h2>I'm a heading</h2>
+        <h2>I'm a heading</h2>
+        <div>I'm a div again</div>
+    </div>
 </body>
 </html>

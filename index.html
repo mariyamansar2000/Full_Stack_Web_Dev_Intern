@@ -7,36 +7,32 @@
     <title>CSS</title>
     <style>
         * {
+            color: white;
             padding: 0;
             margin: 0;
             box-sizing: border-box;
         }
 
-        .parent {
-            height: 500px;
-            background: hsla(335, 91%, 70%, 1);
-            background: linear-gradient(90deg, hsla(335, 91%, 70%, 1) 0%, hsla(49, 89%, 61%, 1) 100%);
-            background: -moz-linear-gradient(90deg, hsla(335, 91%, 70%, 1) 0%, hsla(49, 89%, 61%, 1) 100%);
-            background: -webkit-linear-gradient(90deg, hsla(335, 91%, 70%, 1) 0%, hsla(49, 89%, 61%, 1) 100%);
-            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F86CA7", endColorstr="#F4D444", GradientType=1 );
-
+        h1.background{
+            background-color: #04fc18;
         }
 
-        .child {
-            width: 100px;
-            height: 150px;
+        h2.background{
+            background-color: black;
+        }
+        h3.background{
+            background-color: crimson;
+        }
+        span.background{
             background-color: orange;
-            margin: 10px;
-
         }
         
     </style>
 </head>
 <body>
-    <div class="parent">
-
-        
-        
-    </div>
+    <h1 class="background">Heading One</h1>
+    <h2 class="background">Heading Two</h2>
+    <h3 class="background">Heading Three</h3>
+    <span class="background">I am a span</span>
 </body>
 </html>

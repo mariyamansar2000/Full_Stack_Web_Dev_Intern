@@ -11,40 +11,38 @@
             padding: 0;
             margin: 0;
             box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 4px;
         }
         
-        h2 {
+
+        h2:nth-child(1) {
             padding: 5px;
             color: #f1f1f1;
-            background-color: #ffbf00;
+            background-color: cyan;
+            transition-duration: 0.5s;
+            transition-timing-function: linear;
         }
+        h2:nth-child(4) {
+            padding: 5px;
+            color: #f1f1f1;
+            background-color: red;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in;
+        }
+
 
         h2:hover {
-            background-color: crimson;
-            cursor: crosshair;
+            background-color: orange;
+            cursor: pointer;
         }
-
-        div::selection {
-            background: lime;
-        }
-
-        input:focus {
-            background: pink;
-            color: red;
-            font-size: 4rem;
-        }
-
-        h2::after {
-            content: "I'm after";
-            font-size: 0.5rem;
-            color: red;
-            position: relative;
-        }
+        
     </style>
 </head>
 <body>
     <h2>I'm a heading</h2>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ab, quae pariatur eaque cumque ipsa error delectus at odio tempore maiores provident quibusdam ratione temporibus hic dolor incidunt? Ipsum, numquam.</div>
-    <input type="text/>"
+    <br/>
+    <br/>
+    <h2>I'm a heading</h2>
 </body>
 </html>

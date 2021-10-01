@@ -13,23 +13,38 @@
             box-sizing: border-box;
         }
         
-        div.parent div {
-            background-color: lime;
+        h2 {
+            padding: 5px;
+            color: #f1f1f1;
+            background-color: #ffbf00;
         }
 
-        .parent h1 {
-            background-color: blue;
+        h2:hover {
+            background-color: crimson;
+            cursor: crosshair;
+        }
+
+        div::selection {
+            background: lime;
+        }
+
+        input:focus {
+            background: pink;
+            color: red;
+            font-size: 4rem;
+        }
+
+        h2::after {
+            content: "I'm after";
+            font-size: 0.5rem;
+            color: red;
+            position: relative;
         }
     </style>
 </head>
 <body>
-    <div class="parent">
-        <div>I,m a div</div>
-        <h1>I'm a heading</h1>
-        <h1>I'm a heading</h1>
-        <h2>I'm a heading</h2>
-        <h2>I'm a heading</h2>
-        <div>I'm a div again</div>
-    </div>
+    <h2>I'm a heading</h2>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ab, quae pariatur eaque cumque ipsa error delectus at odio tempore maiores provident quibusdam ratione temporibus hic dolor incidunt? Ipsum, numquam.</div>
+    <input type="text/>"
 </body>
 </html>

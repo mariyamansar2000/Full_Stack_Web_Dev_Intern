@@ -14,35 +14,29 @@
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             margin: 4px;
         }
-        
 
-        h2:nth-child(1) {
-            padding: 5px;
-            color: #f1f1f1;
-            background-color: cyan;
+        div.parent {
+            background-color: #111;
+            min-height: 200px;
+        }
+        div.child {
+            background-color: #ffbf00;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
             transition-duration: 0.5s;
             transition-timing-function: linear;
         }
-        h2:nth-child(4) {
-            padding: 5px;
-            color: #f1f1f1;
-            background-color: red;
-            transition-duration: 0.5s;
-            transition-timing-function: ease-in;
-        }
-
-
-        h2:hover {
-            background-color: orange;
-            cursor: pointer;
-        }
         
+        div.parent:hover div.child {
+            background-color: red;
+            transform: rotateY(120deg)
+        }
     </style>
 </head>
 <body>
-    <h2>I'm a heading</h2>
-    <br/>
-    <br/>
-    <h2>I'm a heading</h2>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
 </body>
 </html>

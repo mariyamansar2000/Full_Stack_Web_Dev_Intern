@@ -21,16 +21,20 @@
                 width: 100px;
                 height: 100px;
                 background-color: #ffbf00;
-                transition: 1s ease;
         }
 
         div.parent:hover div.child {
-            transform: translateX(80vw);
+            animation: 1s move ease;
         }
 
         @keyframes move {
-             
-        }
+            0% {
+                transform: translateX(0vw);
+            }
+            100% {
+                transform: translateX(80vw);
+            }
+        }             
     </style>
 </head>
 <body>

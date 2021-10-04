@@ -7,22 +7,37 @@
     <title>Todo List</title>
     <style>
         div.parent {
-            background: black;
-            font-size: 2rem;
-            color: #fff;
+            display: flex;
+            align-items: stretch;
+            background-color: #111;
+            height: 100vh;
         }
 
-        div.parent {
-            background: #ffbf00;
-            border: 5px solid red;
-        }         
+        div.child {
+            background-color: #fbbf00;
+            flex-basis: 80%;
+        }
+
+        div.sidebar {
+            background-color: crimson;
+            flex-basis: 20%;
+        }
+
+        @media (max-width:450px) {
+            div.sidebar {
+                flex-basis: 0%;
+            }
+            div.child {
+                flex-basis: 100%;
+            }
+        }
+
     </style>
 </head>
 <body>
     <div class="parent">
-        <h1>I'm a heading</h1>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia harum asperiores maiores eveniet. Non quidem id atque in. Rerum rem consectetur nesciunt tenetur a quibusdam animi veritatis deserunt et libero.
-
+        <div class="sidebar"></div>
+        <div class="child"></div>
     </div>
 
 </body>

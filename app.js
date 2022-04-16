@@ -1,2 +1,6 @@
-const stuff = require('./utils')
-console.log(stuff)
+const {add, subtract, multiply, divide} = require('./utils')
+
+add()
+subtract()
+multiply()
+divide()

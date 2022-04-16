@@ -1,3 +1,3 @@
-for(var i=0;i<10;i++){
-    console.log('iteration',i+1)
-}
+setTimeout(() => {
+    console.log('hi')
+}, 5000)
